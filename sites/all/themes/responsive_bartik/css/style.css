@@ -1,5 +1,8 @@
 
 /* ------------------- Overall Specifications ------------- */
+a.follow-link-github {
+  background-image: url('http://hammerjs.github.io/assets/img/github-icon.png');
+}
 
 body {
   line-height: 1.5;
@@ -1685,14 +1688,14 @@ a#menu-toggle:after {
     display: none;
     height: auto;
   }
-  
+
   /* ----------------- Forms on Small Screens ------------- */
   input.form-text,
   input.form-tel,
-  input.form-email, 
+  input.form-email,
   input.form-url,
   input.form-search,
-  input.form-number, 
+  input.form-number,
   input.form-color,
   textarea.form-textarea,
   select.form-select {
