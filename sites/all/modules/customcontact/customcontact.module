@@ -11,12 +11,17 @@ function customcontact_form_alter(&$form,&$form_state, $form_id) {
         print "</pre>";
     }
     if($form_id =='recipe_node_form'){
-        $form['comment_settings']['#type'] = "hidden";
-        $form['options']['#type'] = "hidden";
-        $form['author']['#type'] = "hidden";
-        $form['revision_information']['#type'] = "hidden";
+        // $form['comment_settings']['#type'] = "hidden";
+        // $form['options']['#type'] = "hidden";
+        // $form['author']['#type'] = "hidden";
+        // $form['revision_information']['#type'] = "hidden";
 
         $form['#after_build'][] = 'customcontact_after_build';
+
+        // print "<pre>";
+        // print_r($form);
+        // print "</pre>";
+
 
     }
 }
@@ -27,11 +32,11 @@ function customcontact_after_build($form, &$form_state){
 
     // $form['additional_settings']['group']['#groups']['additional_settings'][0]['enabled']['#type'] = "hidden";
 
-    unset($form['additional_settings']);
+    // unset($form['additional_settings']);
 
-    print "<pre>";
-    print_r($form);
-    print "</pre>";
+    // print "<pre>";
+    // print_r($form);
+    // print "</pre>";
 
     return $form;
 }
